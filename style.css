@@ -1,0 +1,151 @@
+*{ margin:0;
+    padding: 0;}
+    
+    .navbar {
+        overflow: hidden;
+        background-color: #8EACCD;
+        height: 6vh;
+      }
+
+    .navbar h1 {
+        display: inline-block;
+         font-family:'Playpen Sans', cursive;
+         font-size: larger;
+         margin-top: .5vh;
+         margin-left: 7px;
+      }
+    
+      /* Links inside the navbar */
+      .navbar a {
+        float: right;
+        font-family: 'Young Serif',serif; 
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: .5vh;
+        border-radius: 90px;
+        background-color: #ffc2c7;
+        text-decoration: none;
+        margin-top: 3px;
+        margin-left: 10px;
+        margin-right: 3px;
+      }
+      
+      /* The dropdown container */
+      .dropdown {
+        float: right;
+        overflow: hidden;
+        margin-right: 15px;
+        margin-top: 3.5px;
+      }
+      
+      /* Dropdown button */
+      .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: .5vh;
+        border-radius: 90px;
+        background-color: #ffc2c7;
+        font-family: 'Young Serif',serif; 
+        margin: auto; 
+      }
+      
+      .navbar a:hover, .dropdown:hover .dropbtn {
+        background-color: #D2E0FB;
+      }
+    
+      /* Dropdown content (hidden by default) */
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #ffc2c7;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      /* Links inside the dropdown */
+      .dropdown-content a {
+        float: none;
+        font-family: 'Young Serif',serif;
+        color: black;
+        padding: 1vh;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+    
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+
+    video{
+        height: 100vh;
+        width: 100vw; 
+        object-fit: cover;
+        position: fixed;   
+        z-index: -1;
+    }
+
+    .icon{
+        background: url(media/sprite3.png) no-repeat -141px -221px;
+        width: 66px;
+        height: 66px;
+        display: inline-block;
+    }
+    
+    #pint{background-position: -141px -221px;}
+    #fb{background-position: -439px -146px ;}
+    #twt{background-position: -66px -72px ;}
+
+    footer{
+        text-align: center;
+        position: fixed;
+        bottom: 0vw;
+        width: 100vw;
+    }
+
+    /* end of page 1 */
+    
+    /*responsiveness*/
+    @media screen and (max-width: 600px){
+        nav{
+            position: relative;
+            background-color: #A4D4FC;
+         }
+        .pagetitle{
+            background-color:azure;
+            padding: 1vw;
+            color: black;
+            transition:.5s;
+        }
+        .links{
+             display: none;
+             position: absolute;
+             min-width: 105vw;
+             box-shadow: 0px 8px 16px 0px #B0A695;
+             z-index: 1;
+             background-color: burlywood;
+        }
+        .links a{
+            color: rgb(240, 237, 237);
+            display: block;
+            transition: .5s;
+            margin-left:25px;
+            padding-left: 1vh;
+            padding-top: 1vh;
+            padding-bottom: 1vh;
+    
+        }
+        .links a:hover{
+            background-color:wheat;
+            transition: .5s;
+        }
+        nav:hover .links{
+           display: block;
+           transition: .5s;
+        }
+    }
